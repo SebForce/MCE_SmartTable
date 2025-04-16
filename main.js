@@ -36,6 +36,10 @@
     loading();
     return true;
   });
+
+  %%[ IF EMPTY(@deName) THEN ]%%
+  $("footer").addClass("fixed-bottom");
+  %%[ ENDIF ]%%
 </script>
 
 %%[ IF NOT EMPTY(@deName) AND @hasError != "True" THEN ]%%
