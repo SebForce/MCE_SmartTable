@@ -514,7 +514,7 @@
           }
         }
       });
-      
+      %%[ IF @hasData == 'True' THEN ]%%
       document.getElementById('btnDownloadCSV').addEventListener('click', () => {
         var hiddenEl = document.getElementById('hiddenHotTable');
         var tmpHot = new Handsontable(hiddenEl, {
@@ -536,7 +536,7 @@
         hot.getPlugin('copyPaste').copy('with-column-headers');
         hot.selectCells(selection);
       });
-
+      %%[ ENDIF ]%%
       function autoResizeColumnsWidth(element, retry = true) {
         element.resizeInProgress = true;
         const domID = element.id; // 'element_HTcontainer_' + element.id;
