@@ -216,4 +216,8 @@
   .cloud-icon-link {
     color: #0A0833;
   }
+  .query-builder .rules-group-container {
+    border-color: #E6E8F0;
+    background: #E6E8F0;
+  }
 </style>
