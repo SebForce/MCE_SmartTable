@@ -185,20 +185,22 @@
 
   /* SebForce Brand */
   .btn-info, .btn-primary, .btn-success {
+    --bs-btn-color: #fff;
     --bs-btn-bg: #5F42D4;
     --bs-btn-border-color: #5F42D4;
+    --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #5F42D4;
     --bs-btn-hover-border-color: #5F42D4;
-    --bs-btn-color: #fff;
     --bs-btn-active-bg: #5F42D4;
     --bs-btn-active-border-color: #5F42D4;
   }
   .btn-danger, .btn-warning {
+    --bs-btn-color: #fff;
     --bs-btn-bg: #F35B04;
     --bs-btn-border-color: #F35B04;
+    --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #F35B04;
     --bs-btn-hover-border-color: #F35B04;
-    --bs-btn-color: #fff;
     --bs-btn-active-bg: #F35B04;
     --bs-btn-active-border-color: #F35B04;
   }
