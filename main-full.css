@@ -191,7 +191,7 @@
     --bs-btn-hover-border-color: #5F42D4;
     --bs-btn-color: #fff;
   }
-  .btn-danger {
+  .btn-danger, .btn-warning {
     --bs-btn-bg: #F35B04;
     --bs-btn-border-color: #F35B04;
     --bs-btn-hover-bg: #F35B04;
