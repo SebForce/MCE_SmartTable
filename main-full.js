@@ -438,7 +438,7 @@
                 changes[i][3] = formattedDatetime;
             }
             else if (fieldType === "Boolean") {
-              changes[i][3] = changes[i][3].replace(/^(1|y|yes)$/i, true).replace(/^(0|n|no)$/i, false);
+              changes[i][3] = (changes[i][3] + '').replace(/^(1|y|yes)$/i, true).replace(/^(0|n|no)$/i, false);
             }
           }
         },
