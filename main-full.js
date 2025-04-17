@@ -120,7 +120,8 @@
         selected.push(selections[i]);
       $("#table_fields_selected").val(JSON.stringify(selected));
     }).on('hide.bs.select', function(e, clickedIndex, isSelected, previousValue) {
-      $("#filterForm").submit();
+      if (JSON.stringify($('.selectpicker').selectpicker('val')) !== JSON.stringify(table_fields_selected))
+        $("#filterForm").submit();
     });
 
     // Pagination Change
