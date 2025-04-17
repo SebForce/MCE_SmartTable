@@ -90,10 +90,10 @@
   .simple-pagination li.active .current:focus,
   .simple-pagination li.active .current:hover {
     z-index: 2;
-    color: #000;
+    color: #fff;
     cursor: default;
-    background-color: #31d2f2;
-    border-color: #25cff2;
+    background-color: #5F42D4;
+    border-color: #5F42D4;
   }
   .simple-pagination li.disabled {
     cursor: auto;
@@ -181,5 +181,39 @@
     60%{transform:translateZ(0);animation-timing-function:cubic-bezier(.55,.085,.68,.53)}
     80%{transform:translate3d(.75rem,0,0);animation-timing-function:cubic-bezier(0,1.11,.7,1.43)}
     to{transform:translateX(0)}
+  }
+
+  /* SebForce Brand */
+  .btn-info, .btn-primary, .btn-success {
+    --bs-btn-bg: #5F42D4;
+    --bs-btn-border-color: #5F42D4;
+    --bs-btn-hover-bg: #5F42D4;
+    --bs-btn-hover-border-color: #5F42D4;
+    --bs-btn-color: #fff;
+  }
+  .btn-danger {
+    --bs-btn-bg: #F35B04;
+    --bs-btn-border-color: #F35B04;
+    --bs-btn-hover-bg: #F35B04;
+    --bs-btn-hover-border-color: #F35B04;
+    --bs-btn-color: #fff;
+  }
+  .ht-theme-main, .ht-theme-main-dark, .ht-theme-main-dark-auto {
+    --ht-checkbox-checked-background-color: #8CA8FF;
+    --ht-checkbox-checked-border-color: #8CA8FF;
+    --ht-checkbox-focus-ring-color: #8CA8FF;
+    --ht-cell-selection-border-color: #8CA8FF;
+    --ht-cell-autofill-background-color: #8CA8FF;
+    --ht-row-header-odd-background-color: #E6E8F0;
+    --ht-row-header-even-background-color: #E6E8F0;
+    --ht-header-row-highlighted-background-color: #D5D8E2;
+    --ht-header-background-color: #E6E8F0;
+    --ht-header-highlighted-background-color: #D5D8E2;
+    --ht-cell-horizontal-border-color: #D5D8E2;
+    --ht-cell-vertical-border-color: #D5D8E2;
+    --ht-border-color: #D5D8E2;
+  }
+  .cloud-icon-link {
+    color: #0A0833;
   }
 </style>
