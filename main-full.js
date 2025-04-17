@@ -123,9 +123,6 @@
       }
       else
         $("#btnChangeFields").addClass("btn-outline-secondary").removeClass("btn-info").prop("disabled", true);
-    }).on('hide.bs.select', function(e, clickedIndex, isSelected, previousValue) {
-      if (JSON.stringify($('.selectpicker').selectpicker('val')) !== JSON.stringify(table_fields_selected))
-        $("#filterForm").submit();
     });
 
     // Pagination Change
