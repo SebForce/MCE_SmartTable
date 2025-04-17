@@ -113,12 +113,16 @@
 
     // Initialize Multiselect
     $('#table_fields').on('changed.bs.select', function(e, clickedIndex, isSelected, previousValue) {
-      $("#btnChangeFields").removeClass("btn-outline-secondary").addClass("btn-info").prop("disabled", false);
       var selections = $('.selectpicker').selectpicker('val');
-      var selected = [];
-      for (var i = 0; i < selections.length; i++)
-        selected.push(selections[i]);
-      $("#table_fields_selected").val(JSON.stringify(selected));
+      if (JSON.stringify(selections) !== JSON.stringify(table_fields_selected)) {
+        $("#btnChangeFields").removeClass("btn-outline-secondary").addClass("btn-info").prop("disabled", false);
+        var selected = [];
+        for (var i = 0; i < selections.length; i++)
+          selected.push(selections[i]);
+        $("#table_fields_selected").val(JSON.stringify(selected));
+      }
+      else
+        $("#btnChangeFields").addClass("btn-outline-secondary").removeClass("btn-info").prop("disabled", true);
     }).on('hide.bs.select', function(e, clickedIndex, isSelected, previousValue) {
       if (JSON.stringify($('.selectpicker').selectpicker('val')) !== JSON.stringify(table_fields_selected))
         $("#filterForm").submit();
