@@ -193,6 +193,9 @@
     --bs-btn-hover-border-color: #5F42D4;
     --bs-btn-active-bg: #5F42D4;
     --bs-btn-active-border-color: #5F42D4;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #5F42D4;
+    --bs-btn-disabled-border-color: #5F42D4;
   }
   .btn-danger, .btn-warning {
     --bs-btn-color: #fff;
@@ -203,6 +206,9 @@
     --bs-btn-hover-border-color: #F35B04;
     --bs-btn-active-bg: #F35B04;
     --bs-btn-active-border-color: #F35B04;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #F35B04;
+    --bs-btn-disabled-border-color: #F35B04;
   }
   .ht-theme-main, .ht-theme-main-dark, .ht-theme-main-dark-auto {
     --ht-checkbox-checked-background-color: #8CA8FF;
